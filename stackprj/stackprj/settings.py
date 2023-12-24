@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'stackbase',
     'stackusers',
     'crispy_forms',
-    'ckeditor'
+    'ckeditor',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -145,4 +146,6 @@ LOGIN_REDIRECT_URL = 'stackbase:home'
 
 LOGIN_URL = 'login'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"

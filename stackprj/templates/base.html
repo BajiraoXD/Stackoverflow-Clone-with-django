@@ -7,10 +7,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
-    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
-    <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
-    <link rel="image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
+    <title>CodeRX Dev Space - Where Developers Learn, Share, &amp; Build Careers</title>
+    <link rel="shortcut icon" href="static/CodeRX_1_-removebg-preview.svg">
+    <link rel="apple-touch-icon" href="static/CodeRX_1_-removebg-preview.svg">
+    <link rel="image_src" href="static/CodeRX_1_-removebg-preview.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -39,7 +39,7 @@
                     <ul class="nav-ul">
                         <li class="nav-item">
                             <i class="fas fa-globe-europe"></i>
-                            <a href="" class="nav-link">Stack Overflow</a>
+                            <a href="" class="nav-link">Dev Space</a>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Tags</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
@@ -58,8 +58,10 @@
             </div>
 
             <a href="" class="nav-icon">
-                <i class="fab fa-stack-overflow"></i>
-                <a href="{% url 'stackbase:home' %}" style="text-decoration: none; color: black;"><div class="nav-icon-text">stack <span class="nav-bold-text">overflow</span></a>
+                <!-- <i class="fab fa-stack-overflow"></i> -->
+                
+                <img src="https://i.ibb.co/M2pwN53/Code-RX-1-removebg-preview-1.png" style="height: 1.2cm;width: 3cm;">
+                <a href="{% url 'stackbase:home' %}" style="text-decoration: none; color: black;margin-left: 0;"><div class="nav-icon-text">Dev <span class="nav-bold-text">Space</span></a>
                 <!-- <div class="nav-icon-text">stack <span class="nav-bold-text">overflow</span> -->
 
                 
@@ -106,7 +108,7 @@
                 <i class="fas fa-search"></i>
             </div>
             {% if user.is_authenticated %}
-                <a href="{% url 'login' %}" class="btn btn-login">Profile</a>
+                <a href="{% url 'profile' %}" class="btn btn-login">Profile</a>
                 <a href="{% url 'logout' %}" class="btn btn-register">Logout</a> 
             {% else %}
                 <a href="{% url 'login' %}" class="btn btn-login">Log in</a>
@@ -165,7 +167,8 @@
                         </div>
                     </div>
                     <div class="jobs-btn">
-                        <div class="btn btn-orange jobs-btn">View all jobs</div>
+                        <a href="https://internshala.com/">
+                        <div class="btn btn-orange jobs-btn">View all jobs</div></a>
                     </div>
             </div>
         </div>
@@ -177,11 +180,11 @@
 <div class="container">
     <div class="footer-content">
         <div class="footer-icon">
-            <i class="fab fa-stack-overflow"></i>
+            <img src="https://i.ibb.co/Rv4sT8c/output-onlinepngtools.png" style="height:0.5cm;width: 2cm;">
         </div>
         <div class="footer-nav">
             <div class="footer-nav-col">
-                <div class="footer-links-title"><a href="#">Stack Overflow</a></div>
+                <div class="footer-links-title"><a href="#">Dev Space</a></div>
                 <ul class="footer-links">
                     <li class="footer-link-item"><a href="#" class="footer-link">Questions</a></li>
                     <li class="footer-link-item"><a href="#" class="footer-link">Jobs</a></li>
@@ -213,7 +216,7 @@
                 </ul>
             </div>
             <div class="footer-nav-col">
-                <div class="footer-links-title"><a href="#">Stack Exchange Network</a></div>
+                <div class="footer-links-title"><a href="#">Dev Space Network</a></div>
                 <ul class="footer-links">
                     <li class="footer-link-item">
                         <a href="#" class="footer-link">Technology</a>
@@ -268,7 +271,7 @@
                 </ul>
             </div>
             <div class="copyright">
-                <p>site design / logo © 2020 Stack Exchange Inc; user contributions licensed under <a href="https://stackoverflow.com/help/licensing">cc by-sa</a>. rev 2020.10.2.37725</p>
+                <p>site design / logo © 2020 CodeRX Inc; user contributions licensed under <a href="https://stackoverflow.com/help/licensing">cc by-sa</a>. rev 2020.10.2.37725</p>
             </div>
         </div>
     </div>
