@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-jaelsf1%p)ryf^8w7-&o9e+4rqpiyn9*j_!3r1q#t@&+b!8+bh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#Updated permissions
+ALLOWED_HOSTS = ['stackoverflow-clone-with-django.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
