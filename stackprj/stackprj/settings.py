@@ -29,6 +29,12 @@ DEBUG = True
 #Updated permissions
 ALLOWED_HOSTS = ['stackoverflow-clone-with-django.onrender.com', 'localhost', '127.0.0.1']
 
+#updated CSRF permission
+CSRF_TRUSTED_ORIGINS = [
+    'https://stackoverflow-clone-with-django.onrender.com',
+    'http://localhost',
+    'http://127.0.0.1'
+]
 
 
 # Application definition
